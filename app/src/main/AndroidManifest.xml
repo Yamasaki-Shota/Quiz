@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ele"
+        android:label="Enjoy Learning English"
+        android:roundIcon="@mipmap/ele_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <activity android:name=".VehicleActivity"/>
+        <activity android:name=".FieldActivity"/>
+        <activity android:name=".SportsActivity"/>
+        <activity android:name=".FeelActivity"/>
+        <activity android:name=".EatActivity"/>
+        <activity android:name=".VehicleJActivity"/>
+        <activity android:name=".FieldJActivity"/>
+        <activity android:name=".SportsJActivity"/>
+        <activity android:name=".FeelJActivity"/>
+        <activity android:name=".EatJActivity"/>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".SelectJActivity" />
+        <activity android:name=".ShuffleJActivity" />
+        <activity android:name=".ShuffleActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ResultJActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainJActivity" />
+        <activity android:name=".TitleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

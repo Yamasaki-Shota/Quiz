@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#98FB98"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image_view_image"
+        android:layout_width="224dp"
+        android:layout_height="235dp"
+        android:contentDescription="@string/img_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/questionLabel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countLabel"
+        app:layout_constraintVertical_bias="1" />
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q1"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="55sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="181dp"
+        android:layout_height="132dp"
+        android:text="answer1"
+        android:background="@drawable/flame_style3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721"
+        android:onClick="checkAnswer"/>
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="179dp"
+        android:layout_height="127dp"
+        android:text="answer2"
+        android:background="@drawable/flame_style3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721"
+        android:onClick="checkAnswer"/>
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="176dp"
+        android:layout_height="131dp"
+        android:text="answer3"
+        android:background="@drawable/flame_style3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        android:onClick="checkAnswer"
+        />
+
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="178dp"
+        android:layout_height="129dp"
+        android:text="answer4"
+        android:background="@drawable/flame_style3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        android:onClick="checkAnswer"
+        />
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/flame_style"
+        android:onClick="returnTop"
+        android:text="HOME"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/returnBtn1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:onClick="returnTitle"
+        android:text="TITLE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/flame_style1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
